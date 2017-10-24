@@ -1,0 +1,42 @@
+<style>
+body{
+	margin: 2% ;
+	border:3px solid black ;
+}
+table#infoTable {
+	padding:10px;
+}
+.chk{
+	float:left;
+	padding: 20px;
+}	
+div.section{
+	padding:10px;
+	border: 1px solid black;
+}
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.tbl {
+	text-align: center;
+	vertical-align: middle;
+	margin-left: 25px;
+	margin-top: 20px;
+	border: solid 1px;
+	width: 850px;
+	height: 110px;
+}
+.row {
+	float: none;
+	clear: both;
+}
+
+.col {
+	width: 175px;
+	height: 30px;
+	float: left;
+	margin: 5px 5px 5px 5px;
+}
+</style>

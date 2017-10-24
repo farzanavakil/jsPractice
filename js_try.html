@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		
+		function validateName(){
+            var validLastname = document.getElementById("txtLastName");
+            if (validLastname.value == "" || validLastname.value == null) {
+				alert("Name must be filled out");
+
+			}
+			
+
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<label>FirstName</label>
+		<input id="txtFirstName" type="textbox" name="fName" />
+		<label>LastName</label>
+		<input id= "txtLastName" type="textbox" name="lName" />
+		<input id="clickMe" type="button" value="Submit" onclick="validateName()"; />
+	</form>
+
+</body>
+</html>
+

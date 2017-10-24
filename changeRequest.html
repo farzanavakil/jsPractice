@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+	<title> Change Request Template </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<form>
+		<div class="section">
+			<h2 style="text-align: center"> Change Request </h2>
+			<table id="infoTable" width=100%>
+				<tr>
+					<td>Project:</td> <td width=40%><input size="50" type="text" name="project"></td>
+					<td> Date:</td><td><input type="date" name="date"></td>
+				</tr>
+				<tr>
+					<td>Change Requestor:</td> <td width=40%><input size="50" type="text" name="project"></td>
+					<td>Change Number:</td> <td width=40%><input size="50" type="text" name="project"></td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<div class="section clearfix">
+			<h3> Change Category (check all that apply)</h3>
+			<div class="tbl">
+				<div class="chk"> <input type="checkbox" name="Schd" value="Schedule">Schedule</div>
+				<div class="chk"> <input type="checkbox" name="cost" value="Cost">Cost</div>
+				<div class="chk"> <input type="checkbox" name="scope" value="Scope">Scope</div>
+				<div class="chk"> <input type="checkbox" name="reqdel" value="reqdel">Requirements/Deliverables</div>
+				<div class="chk"> <input type="checkbox" name="testing" value="tstqual">Testing/Quality</div>
+				<div class="chk"> <input type="checkbox" name="resources" value="resources">Resources</div>
+			</div>
+		</div>
+		
+		<div class="section clearfix">
+			<h3> Does this Change Affect (check all that apply)</h3>
+			<div class="tbl">
+				<div class="chk"> <input type="checkbox" name="corraction" value="Corrective_action">Corrective Action</div>
+				<div class="chk"> <input type="checkbox" name="prevenaction" value="PreventiveAction">Preventive Action</div>
+				<div class="chk"> <input type="checkbox" name="defectrepair" value="DefectRepair">Defect Repair</div>
+				<div class="chk"> <input type="checkbox" name="updates" value="updates">Updates</div>
+				<div class="chk"> <input type="checkbox" name="other" value="other">Other</div>
+			</div>
+		</div>
+		
+		<div class="section">
+			<h3>Describe the Change being Requested:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Describe the Reason for the Change:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Describe all Alternatives being Considered:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Describe any Technical Changes Required to Implement the Change:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Describe the Risks to be Considered for this Change:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Estimate Resources and Costs Needed to Implement this Change:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h3>Describe the Implications to Quality:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section clearfix">
+			<h3>Disposition</h3>
+			<div class="chk"> <input type="checkbox" name="Approve" value="approve">Approve</div>
+			<div class="chk"> <input type="checkbox" name="Reject" value="reject">Reject</div>
+			<div class="chk"> <input type="checkbox" name="defer" value="defer">Defer</div>
+		</div>
+		<div class="section">
+			<h3>Justification of Approval,Rejection or Deferral:</h3>
+			<textarea name="description" rows="4" cols="150"></textarea>
+		</div>
+		
+		<div class="section">
+			<h4> Change Board Approval</h4>
+			<table  style="border: 1px solid black; text-align:left;" width=100%>
+				<thead>
+					<th>Name</th><th>Date</th>
+				</thead>
+				<tr>
+					<td><input type="text" name="name1" size="50"></td>
+					<td><input type="date" name="date1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="name2" size="50"></td>
+					<td><input type="date" name="date2"></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="section">
+			<input type="submit">
+			<input type="reset">
+		</div>
+	</form>
+</body>

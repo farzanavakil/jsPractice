@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+		function ParamValidate(){
+			var x = document.getElementById("txtLastName");
+			if (x.value == "") {
+				alert("Name must be filled out");
+
+			}
+
+
+		}
+
+    </script>
+</head>
+<body>
+    <form>
+        <label>FirstName</label>
+        <input id="txtFirstName" type="text" name="fName" />
+        <label>LastName</label>
+        <input id="txtLastName" type="text" name="lName" />
+        <label>Phone Number</label>
+        <input id="phoneNum" type="number" name="phoneNum" />
+        <label>Email</label>
+        <input id="email" type="text" name="email" />
+        <input id="clickMe" type="button" value="Submit" onclick="ParamValidate()" ; />
+    </form>
+
+</body>
+</html>
+
