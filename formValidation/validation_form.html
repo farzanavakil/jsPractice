@@ -103,20 +103,27 @@
                     console.log(!lastName.match(name_regex));
                         }
                     }
-                if (!emailAdd.match(email_regex) || emailAdd.length == 0) {
-                    $('#p3').text("Please enter valid email");
-                    console.log(!emailAdd.match(name_regex));
-                }
-                if (!phoneNum.match(phone_regex) || phoneNum.length == 0) {
-                    $('#p4').text("Please enter valid phone number xxx-xxx-xxxx");
-                    console.log(!phoneNum.match(name_regex));
-                }
+                    if (emailAdd.length != 0 || firstName.length == 0 || lastName.lastName == 0) {
+                        if (!emailAdd.match(email_regex) || emailAdd.length == 0) {
+                            $('#p3').text("Please enter valid email");
+                            console.log(!emailAdd.match(name_regex));
+                        }
+                    }
+
+                    if (phoneNum.length != 0 || firstName.length == 0 || lastName.lastName == 0) {
+                        if (!phoneNum.match(phone_regex) || emailAdd.length == 0) {
+                            $('#p4').text("Please enter valid phone number xxx-xxx-xxxx");
+                            console.log(!phoneNum.match(name_regex));
+                        }
+                    }
                 console.log("I am done");
             });
 
             
         });
-                
+
+        
+                        
     </script>
 </head>
 <body>
@@ -128,7 +135,7 @@
         <form>
             
                 <div class="required">
-                    <label>FirstName:</label>
+                    <label>First Name:</label>
                 </div>
                 <div>
                     <input id="txtFirstName" type="text" name="Firstname" class="required" />
