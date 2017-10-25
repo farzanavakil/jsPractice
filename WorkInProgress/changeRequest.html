@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <head>
 	<title> Change Request Template </title>
-
+	
 	<link rel="stylesheet" type="text/css" href="changeRequest.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
 	<script type="text/javascript" src="changeRequest.js"></script>
-
+	
 </head>
 <body>
 	<form>
@@ -25,7 +26,7 @@
 			
 		</div>
 		
-		<div class="section clearfix">
+		<div class="section checkboxInput clearfix">
 			<h3> Change Category (check all that apply)</h3>
 			<div class="tbl">
 				<div class="chk"> <input type="checkbox" name="Schd" value="Schedule">Schedule</div>
@@ -37,7 +38,7 @@
 			</div>
 		</div>
 		
-		<div class="section clearfix">
+		<div class="section checkboxInput clearfix">
 			<h3> Does this Change Affect (check all that apply)</h3>
 			<div class="tbl">
 				<div class="chk"> <input type="checkbox" name="corraction" value="Corrective_action">Corrective Action</div>
@@ -106,7 +107,7 @@
 			<table  style="border: 1px solid black; text-align:left;" width=100>
 				<tr>
 					<th>Name</th>
-                    <th>Date</th>
+					<th>Date</th>
 				</tr>
 				<tr>
 					<td><input type="text" name="name1" size="50"></td>
@@ -118,7 +119,7 @@
 				</tr>
 			</table>
 		</div>
-
+		
 		<div class="section">
 			<input type="submit" id="submitButton">
 			<input type="reset">
