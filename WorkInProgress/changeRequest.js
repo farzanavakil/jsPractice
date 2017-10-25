@@ -11,12 +11,12 @@ $(document).ready(function () {
     
     function validateCheckbox(){
         console.log("hello");
-        $(this).find('input[type="checkbox" input:checked]').length == 0{
+        if ( $(this).find('input[type="checkbox" input:checked]').length == 0 ) {
             $(this).children("p")[0].innerHTML = "Please check least one box";
         }
     }
     
-    $("input#submitButton").click(function () {
+    $("#submit").click(function () {
         $("div.textAreaInput").each(validateTextArea);
         $("div.checkboxInput").each(validateCheckbox);
     });
