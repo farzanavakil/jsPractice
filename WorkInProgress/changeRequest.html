@@ -3,6 +3,9 @@
 	<title> Change Request Template </title>
 
 	<link rel="stylesheet" type="text/css" href="changeRequest.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script type="text/javascript" src="changeRequest.js"></script>
 
 </head>
 <body>
@@ -45,38 +48,45 @@
 			</div>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput" id="debug">
 			<h3>Describe the Change being Requested:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Describe the Reason for the Change:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Describe all Alternatives being Considered:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Describe any Technical Changes Required to Implement the Change:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Describe the Risks to be Considered for this Change:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Estimate Resources and Costs Needed to Implement this Change:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
-		<div class="section">
+		<div class="section textAreaInput">
 			<h3>Describe the Implications to Quality:</h3>
+			<p class=errorLine></p>
 			<textarea name="description" rows="4" cols="150"></textarea>
 		</div>
 		
@@ -110,7 +120,7 @@
 		</div>
 
 		<div class="section">
-			<input type="submit">
+			<input type="submit" id="submitButton">
 			<input type="reset">
 		</div>
 	</form>
