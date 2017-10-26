@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Change Request Template</title>
+    <link rel=stylesheet type="text/css" href="style/common.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="script/common.js"></script>
+</head>
+
+<body>
+    <h1>Change Request Form</h1>
+    <form>
+        <!--First Table-->
+        <div class="myTable">
+            <!--First Table First Row-->
+            <div class="myRow">
+                <div class="myCol mandatory">Project Name:</div>
+                <div class="myCol"><input type="text" name="project_name"class="required"></div>
+                <div class="myCol mandatory">Date:</div>
+                <div class="myCol"><input id="datepicker" type="date" name="date"class="required"></div>
+            </div>
+            <!--First Table Second Row-->
+            <div class="myRow">
+                <div class="myCol mandatory">Change Requestor:</div>
+                <div class="myCol"><input type="text" name="change_requestor"class="required"></div>
+                <div class="myCol mandatory">Change ID:</div>
+                <div class="myCol"><input type="text" name="change_id"class="required"></div>
+            </div>
+        </div>
+        <!--End first Table-->
+        <!--Second Table-->
+        <div class="myTable eventbls validateCheckbox" id="chkcat">
+            <div class="labeldesc"><label>Change Category (check all that apply)</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="Schd" value="Schedule">Schedule</div>
+                <div class="myCol myCol2"><input type="checkbox" name="cost" value="Cost">Cost</div>
+            </div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="scope" value="Scope">Scope</div>
+                <div class="myCol myCol2"><input type="checkbox" name="reqdel" value="Deliverables">Deliverables</div>
+            </div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="testing" value="TstQual">Testing/Quality</div>
+                <div class="myCol myCol2"><input type="checkbox" name="resources" value="Resources">Resources</div>
+            </div>
+        </div>
+        <!--End Second Table-->
+        <!--Third Table-->
+        <div class="myTable oddtbls validateCheckbox" id="chanAff">
+            <div class="labeldesc"><label>Does this Change Affect (check all that apply)</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="corraction" value="Corrective_action">Corrective Action</div>
+                <div class="myCol myCol2"><input type="checkbox" name="prevenaction" value="PreventiveAction">Preventive Action</div>
+            </div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="defectrepair" value="DefectRepair">Defect Repair</div>
+                <div class="myCol myCol2"><input type="checkbox" name="updates" value="updates">Updates</div>
+            </div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><input type="checkbox" name="other" value="other">Other</div>
+            </div>
+        </div>
+        <!--End Third Table-->
+        <!--Fourth Table-->
+        <div class="myTable eventbls validateTextArea">
+            <div class="labeldesc"><label>Describe the Change being Requested:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Fourth Table-->
+        <!--Fifth Table-->
+        <div class="myTable oddtbls validateTextArea">
+            <div class="labeldesc"><label>Describe the Reason for the Change:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Fifth Table-->
+        <!--Sixth Table-->
+        <div class="myTable eventbls validateTextArea">
+            <div class="labeldesc"><label>Describe all Alternatives being Considered:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Sixth Table-->
+        <!--Seventh Table-->
+        <div class="myTable oddtbls validateTextArea">
+            <div class="labeldesc"><label>Describe Technical Changes Needed for the Change:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Seventh Table-->
+        <!--Eighth Table-->
+        <div class="myTable eventbls validateTextArea">
+            <div class="labeldesc"><label>Describe the Risks to be Considered for this Change:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Eighth Table-->
+        <!--Ninth Table-->
+        <div class="myTable oddtbls validateTextArea">
+            <div class="labeldesc"><label>Estimate Resources & Costs Needed for this Change:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Ninth Table-->
+        <!--Tenth Table-->
+        <div class="myTable eventbls tblten validateTextArea">
+            <div class="labeldesc"><label>Describe the Implications to Quality:</label><p class="errorMsg"></p></div>
+            <div class="myRow myRow2">
+                <div class="myCol myCol2"><textarea name="description"></textarea></div>
+            </div>
+        </div>
+        <!--End Tenth Table-->
+        <!--Buttons Table-->
+        <div class="myTable btnstbl">
+            <div class="myRow myRow2">
+                <div class="myCol myCol2">
+                    <input class="btns" id="submitButton" type="button" value="submit">
+                    <input class="btns" type="reset">
+                </div>
+            </div>
+        </div>
+        <!--End Buttons Table-->
+    </form>
+</body>
+</html>
