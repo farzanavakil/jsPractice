@@ -1,15 +1,15 @@
 ﻿$(document).ready(function () {
 
     // Function to validate Text Areas
-    // It expects $(this) to have a div containig textbox
-    function validateTextArea() {
+    // It expects $(this) to have a div containing a textbox
+    validateTextArea = function () {
         console.log($(this));
-        if ($(this).find('input[type="textarea")]').value.length == 0) { // text area is empty
-            $(this).children("p")[0].innerHTML = "Please input valid input";
+        if ($(this).find("textarea")[0].value.length == 0) {
+            $(this).find("p")[0].innerHTML = "Please input valid input";
         }
     }
 
-    function validateCheckbox() {
+    validateCheckbox = function() {
         console.log("hello");
         if ($(this).find('input[type="checkbox" input:checked]').length == 0) {
             $(this).children("p")[0].innerHTML = "Please check least one box";
@@ -35,7 +35,7 @@
             alert('Please enter the hightlighted values');
         }
         //checking the text areas
-        $("div.textAreaInput").each(validateTextArea);
+        $("div.validateTextArea").each(validateTextArea);
         //checking the checkboxes
         $("div.checkboxInput").each(validateCheckbox);
 
